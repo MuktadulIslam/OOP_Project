@@ -1,0 +1,65 @@
+package OOP_Project;
+
+import javafx.application.Application;
+import javafx.scene.Scene;
+import javafx.scene.control.Menu;
+import javafx.scene.control.MenuBar;
+import javafx.scene.control.MenuItem;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import javafx.scene.layout.*;
+import javafx.stage.Stage;
+
+public class Main extends Application {
+    public static void main(String[] args) { launch(args); }
+
+    @Override
+    public void start(Stage primaryStage) throws Exception {
+
+        BorderPane root = new BorderPane();
+        Scene scene = new Scene(root);
+
+        Image image = new Image("OOP_Project/best-hospital-in-south-india.jpg");
+        ImageView imageView = new ImageView(image);
+        imageView.setFitHeight(800);
+        imageView.setFitWidth(1600);
+
+
+        MenuBar menuBar = new MenuBar();
+            Menu patients = new Menu("Patients");
+                MenuItem searchPatients = new MenuItem("Search Patients");
+                MenuItem admission = new MenuItem("Admission");
+                MenuItem discharge = new MenuItem("Discharge");
+                MenuItem records = new MenuItem("Records");
+            patients.getItems().addAll(searchPatients,admission,discharge,records);
+
+            Menu doctors = new Menu("Doctors");
+                MenuItem searchDoctors = new MenuItem("Search Doctors");
+                MenuItem listOfDoctors = new MenuItem("List of Doctors");
+                MenuItem todayAvailable = new MenuItem("Today Available");
+                MenuItem addNewDoctor = new MenuItem("Add New Doctor");
+            doctors.getItems().addAll(searchDoctors,listOfDoctors,todayAvailable,addNewDoctor);
+
+            Menu employee = new Menu("Employee");
+                MenuItem nurse = new MenuItem("Nurse");
+                MenuItem cleaner = new MenuItem("Cleaner");
+                MenuItem securityGuard = new MenuItem("Security Guard");
+                MenuItem managementWorker = new MenuItem("Management worker");
+            employee.getItems().addAll(nurse,cleaner,securityGuard,managementWorker);
+
+            Menu aboutHospital = new Menu("AboutHospital");
+
+        menuBar.getMenus().addAll(patients,doctors,employee,aboutHospital);
+
+        root.getChildren().add(imageView);
+        root.setTop(menuBar);
+
+
+        primaryStage.setScene(scene);
+        primaryStage.setTitle("OOP Project");
+        primaryStage.setMaximized(true);
+        primaryStage.show();
+
+    }
+}
+
