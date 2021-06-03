@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="549.0" prefWidth="905.0" style="-fx-background-color: #0ac1e1;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="OOP_Project.HomePage">
+   <children>
+      <Label alignment="CENTER" layoutX="183.0" prefHeight="138.0" prefWidth="616.0" text="MRF Hospital &amp; Diagnostic Centre" textFill="WHITE">
+         <font>
+            <Font name="Algerian" size="33.0" />
+         </font>
+      </Label>
+      <MenuButton layoutX="30.0" layoutY="138.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="188.0" text="Patients ">
+        <items>
+          <MenuItem mnemonicParsing="false" onAction="#patientAdmission" text="Admission" />
+            <MenuItem mnemonicParsing="false" onAction="#patientRecords" style="front: #c93226;" text="Records" />
+            <MenuItem mnemonicParsing="false" onAction="#patientDischarge" text="Discharge" />
+          <MenuItem mnemonicParsing="false" onAction="#patientSearch" text="Search Patient" />
+        </items>
+         <font>
+            <Font name="Arial Unicode MS" size="17.0" />
+         </font>
+      </MenuButton>
+      <MenuButton layoutX="30.0" layoutY="176.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="188.0" text="Doctors">
+         <items>
+            <MenuItem mnemonicParsing="false" text="Search Doctors " />
+            <MenuItem mnemonicParsing="false" text="  List of Doctors" />
+            <MenuItem mnemonicParsing="false" text="Today Available   " />
+            <MenuItem mnemonicParsing="false" text="Add New Doctor" />
+         </items>
+         <font>
+            <Font name="Arial Unicode MS" size="17.0" />
+         </font>
+      </MenuButton>
+      <MenuButton layoutX="30.0" layoutY="214.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="188.0" text="Employee ">
+         <items>
+            <MenuItem mnemonicParsing="false" text="Nurse " />
+            <MenuItem mnemonicParsing="false" text="Cleaner" />
+            <MenuItem mnemonicParsing="false" text="Security Guard" />
+            <MenuItem mnemonicParsing="false" text="Management Workers" />
+         </items>
+         <font>
+            <Font name="Arial Unicode MS" size="17.0" />
+         </font>
+      </MenuButton>
+      <MenuButton layoutX="30.0" layoutY="253.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="188.0" text="About Hospital">
+         <items>
+            <MenuItem mnemonicParsing="false" text="Action 1" />
+            <MenuItem mnemonicParsing="false" text="Action 2" />
+         </items>
+         <font>
+            <Font name="Arial Unicode MS" size="17.0" />
+         </font>
+      </MenuButton>
+      <Label alignment="CENTER" layoutX="58.0" layoutY="452.0" prefHeight="35.0" prefWidth="830.0" text="To serve the humanity as a whole with this noble vision the MRF Hospital and Diagnostic Center started its journey in June 1980">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="132.0" layoutY="487.0" prefHeight="23.0" prefWidth="706.0" text="The trust has agreed upon to provide health care service to the people of Bangladesh with affordable cost.">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

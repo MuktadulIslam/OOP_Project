@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="233.0" prefWidth="414.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextArea fx:id="textField"  layoutX="43.0" layoutY="16.0" prefHeight="202.0" prefWidth="328.0" wrapText="true">
+         <font>
+            <Font name="System Italic" size="22.0" />
+         </font>
+      </TextArea>
+   </children>
+</Pane>
