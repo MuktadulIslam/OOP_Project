@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="776.0" prefWidth="1412.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="OOP_Project.doctor.listOfDoctor.ListOfDoctor">
+   <children>
+      <ImageView fitHeight="779.0" fitWidth="1208.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@listOfDoctor.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="38.0" layoutY="32.0" text="L I S T  O F  D O C T O R S" textFill="#fcef00">
+         <font>
+            <Font name="System Bold" size="41.0" />
+         </font>
+      </Label>
+      <TableView layoutY="108.0" prefHeight="671.0" prefWidth="1412.0">
+         <columns>
+            <TableColumn prefWidth="153.00003051757812" text="Name" />
+            <TableColumn prefWidth="84.79998779296875" text="Age" />
+            <TableColumn prefWidth="91.99995422363281" text="Gender" />
+            <TableColumn prefWidth="179.20001220703125" text="Contract Number" />
+            <TableColumn prefWidth="207.2000732421875" text="Email" />
+            <TableColumn prefWidth="151.99993896484375" text="Address" />
+            <TableColumn prefWidth="135.99993896484375" text="Specialized Feild" />
+            <TableColumn prefWidth="170.40008544921875" text="Qualification" />
+            <TableColumn prefWidth="121.5999755859375" text="Joining Date" />
+            <TableColumn prefWidth="111.199951171875" text="Salary" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>
