@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="OOP_Project.login.Login">
+   <children>
+      <ImageView fitHeight="811.0" fitWidth="1610.0" layoutX="-13.0" layoutY="-11.0" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@login.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="881.0" layoutY="209.0" prefHeight="357.0" prefWidth="519.0" style="-fx-background-radius: 50; -fx-background-color: #00acfa;">
+         <children>
+            <PasswordField fx:id="password" layoutX="107.0" layoutY="166.0" prefHeight="38.0" prefWidth="321.0" promptText="Enter Password">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </PasswordField>
+            <Text fill="#2000ff" layoutX="107.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Login Password " wrappingWidth="255.883544921875">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Text>
+            <Button layoutX="383.0" layoutY="255.0" mnemonicParsing="false" onAction="#login" prefHeight="35.0" prefWidth="90.0" style="-fx-background-color: #00ffa8; -fx-background-radius: 12; -fx-border-color: #00098c; -fx-border-radius: 8;" text="Log In" textFill="#00098c">
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</Pane>

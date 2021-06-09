@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="pane" prefHeight="700.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="OOP_Project.doctor.deleteDoctor.DeleteDoctor">
+   <children>
+      <ImageView fitHeight="700.0" fitWidth="527.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../employee/deleteEmployee/deleteEmployee.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="672.0" layoutY="25.0" prefHeight="56.0" prefWidth="305.0" text="MRF Hospital">
+         <font>
+            <Font name="Arial" size="37.0" />
+         </font>
+      </Label>
+      <Label layoutX="477.0" layoutY="105.0" prefHeight="31.0" prefWidth="207.0" text="Delete Doctor" textFill="#514e4e">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Text layoutX="488.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name:" wrappingWidth="71.8948974609375">
+         <font>
+            <Font size="17.0" />
+         </font></Text>
+      <Text layoutX="488.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contract Number">
+         <font>
+            <Font size="17.0" />
+         </font></Text>
+      <TextField fx:id="doctorName" layoutX="633.0" layoutY="159.0" prefHeight="42.0" prefWidth="404.0" promptText="Doctor Name">
+         <font>
+            <Font size="17.0" />
+         </font></TextField>
+      <TextField fx:id="doctorContractNumber" layoutX="634.0" layoutY="220.0" prefHeight="42.0" prefWidth="404.0" promptText="Contract Number">
+         <font>
+            <Font size="17.0" />
+         </font></TextField>
+      <Button layoutX="1011.0" layoutY="291.0" mnemonicParsing="false" onAction="#cancel" prefHeight="31.0" prefWidth="98.0" text="Cancel" />
+      <Button layoutX="835.0" layoutY="291.0" mnemonicParsing="false" onAction="#delete" prefHeight="31.0" prefWidth="98.0" text="Delete" />
+      <Button layoutY="-1.0" mnemonicParsing="false" text="Back" />
+   </children>
+</AnchorPane>
