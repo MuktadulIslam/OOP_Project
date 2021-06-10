@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="685.0" prefWidth="1387.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="OOP_Project.patient.records.Records">
+   <children>
+      <ImageView fitHeight="869.0" fitWidth="1458.0" layoutX="-117.0" layoutY="-193.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@records.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="38.0" layoutY="32.0" text="R E C O R D S" textFill="#fcef00">
+         <font>
+            <Font name="System Bold" size="41.0" />
+         </font>
+      </Label>
+      <TableView fx:id="table" layoutX="11.0" layoutY="109.0" prefHeight="579.0" prefWidth="1317.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="109.0">
+        <columns>
+          <TableColumn fx:id="name" prefWidth="117.60000324249268" text="Patient Name" />
+          <TableColumn fx:id="age" prefWidth="88.79998779296875" text="Patient Age" />
+            <TableColumn fx:id="gender" prefWidth="100.80000305175781" text="Gender" />
+            <TableColumn fx:id="contractNumber" prefWidth="140.79998779296875" text="Contract Number" />
+            <TableColumn fx:id="address" prefWidth="127.9998779296875" text="Address" />
+            <TableColumn fx:id="disease" prefWidth="90.4000244140625" text="Disease" />
+            <TableColumn fx:id="admissionDate" prefWidth="114.4000244140625" text="Admission Date" />
+            <TableColumn fx:id="appointedDoctor" prefWidth="126.39996337890625" text="Appointed Doctor" />
+            <TableColumn fx:id="cabinNo" prefWidth="72.0" text="Cabin No" />
+            <TableColumn fx:id="emergencyContractName" prefWidth="136.79998779296875" text="Emergency Contract Name" />
+            <TableColumn fx:id="emergencyContractNumber" prefWidth="104.800048828125" text="Emergency Contract Number" />
+            <TableColumn fx:id="lastVisit" prefWidth="73.5999755859375" text="Last Visit" />
+            <TableColumn fx:id="discharge" prefWidth="63.2000732421875" text="Discharge" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
